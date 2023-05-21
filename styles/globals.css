@@ -1,27 +1,110 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html,
+body {
+  max-width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+}
+
+.home-slogan {
+  background: #6A397B;
+  background: linear-gradient(to right, #6A397B 11%, #32715D 28%, #276D9E 83%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+/* Nav Items */
+
+.cta span {
+  padding-bottom: 7px;
+}
+
+.hover-underline-animation {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.mantine-Carousel-indicator {
+  background-color: gray;
+}
+
+.mantine-Carousel-indicator:hover {
+  background-color: #5986a7;
+}
+
+.mantine-Carousel-indicators {
+  bottom: -2rem;
+}
+
+.contact-bg {
+  background-image: url(../public/gallery/gallery\ \(3\).jpg);
+}
+
+.typewriter h4 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #276D9E;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 80%
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #276D9E;
+  }
 }
