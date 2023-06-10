@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/legacy/image'
 
 const Gallery = () => {
     return (
@@ -11,11 +10,9 @@ const Gallery = () => {
                 <div className="flex md:flex-row flex-col flex-wrap">
                     <div className="flex md:w-1/2 flex-wrap">
                         <div className="w-1/2 p-1 md:p-2 relative pt-[100%]">
-                            <Image
+                            <img
                                 alt="gallery"
-                                className="h-full top-0 left-0 object-cover"
-                                objectFit="cover"
-                                layout='fill'
+                                className="block h-full w-full object-cover object-center"
                                 src="/gallery/gallery (1).jpg" />
                         </div>
                         <div className="w-1/2 p-1 md:p-2">

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Services = () => {
     return (
-        <div className='pt-20'>
+        <div className='pt-20 overflow-hidden'>
             <div className='mb-4 mt-12 w-full'>
                 <h1 className='  text-4xl font-medium tracking-wide capitalize md:text-6xl text-center'>Services We Offer</h1>
             </div>
@@ -21,7 +21,7 @@ const Services = () => {
                                 <div className="border-l-2 mr-4 h-full border-[#276D9E] border-dashed"></div>
                             </div>
                         </div>
-                        <div className="flex-auto border rounded  border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+                        <div data-aos="fade-left" className="flex-auto border rounded  border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                             <div className="flex md:flex-row flex-col items-center">
                                 <div className="md:w-3/5 p-2">
                                     <div className="p-3 text-3xl  ">Complete Event Planning and Recommendations</div>
@@ -59,7 +59,7 @@ const Services = () => {
                                 <div className="border-l-2 ml-4 h-full border-[#276D9E] border-dashed"></div>
                             </div>
                         </div>
-                        <div className="flex-auto border rounded  border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+                        <div data-aos="fade-right" className="flex-auto border rounded  border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                             <div className="flex md:flex-row flex-col items-center">
                                 <div className="md:w-3/5 p-2">
                                     <div className="p-3 text-3xl  ">Wedding Decoration and Styling</div>
@@ -105,7 +105,7 @@ const Services = () => {
                                 <div className="border-l-2 mr-4 h-full border-[#276D9E] border-dashed"></div>
                             </div>
                         </div>
-                        <div className="flex-auto border rounded  border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+                        <div data-aos="fade-left" className="flex-auto border rounded  border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                             <div className="flex md:flex-row flex-col items-center">
                                 <div className="md:w-3/5 p-2">
                                     <div className="p-3 text-3xl  ">Hospitality, Logistics and Guest Management</div>
@@ -154,7 +154,7 @@ const Services = () => {
                                 <div className="border-l-2 ml-4 h-full border-[#276D9E] border-dashed"></div>
                             </div>
                         </div>
-                        <div className="flex-auto border rounded border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+                        <div data-aos="fade-right" className="flex-auto border rounded border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                             <div className="flex md:flex-row flex-col items-center">
                                 <div className="md:w-3/5 p-2">
                                     <div className="p-3 text-3xl  ">Entertainment and Artist Management</div>
@@ -215,7 +215,7 @@ const Services = () => {
                                 <div className="border-l-2 mr-4 h-full border-transparent border-dashed"></div>
                             </div>
                         </div>
-                        <div className="flex-auto border rounded  border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+                        <div data-aos="fade-left" className="flex-auto border rounded  border-gray-500 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                             <div className="flex md:flex-row flex-col items-center">
                                 <div className="md:w-3/5 p-2">
                                     <div className="p-3 text-3xl  ">Celebrity and Vendor Management</div>
