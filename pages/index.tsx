@@ -41,10 +41,10 @@ export default function Home() {
 
           <div data-aos="flip-right" className="mt-12 lg:mt-0 lg:ml-12 w-full mx-auto max-w-md overflow-hidden outline outline-4 outline-offset-4 outline-[#475F45]/40">
             <div className="flex flex-col">
-              <Image className="object-cover" src={hero2} alt="main page" />
+              <Image priority className="object-cover" src={hero2} alt="main page" />
               <div className="flex space-x-2">
-                <Image className="object-cover" src={hero1} alt="main page" />
-                <Image className="object-cover" src={hero3} alt="main page" />
+                <Image priority className="object-cover" src={hero1} alt="main page" />
+                <Image priority className="object-cover" src={hero3} alt="main page" />
               </div>
             </div>
           </div>
