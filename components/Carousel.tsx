@@ -2,7 +2,7 @@ import { Carousel } from '@mantine/carousel';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import yashika from '@/public/testimonials/yashika.jpg'
-import chelsy from '@/public/testimonials/chelsy.jpg'
+import chelsy from '@/public/testimonials/chelsyj.jpg'
 import suhina from '@/public/testimonials/suhina.jpg'
 import utsav from '@/public/testimonials/utsav.jpg'
 import ashu from '@/public/testimonials/ashu.jpg'
