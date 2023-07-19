@@ -1,9 +1,12 @@
 import { Carousel } from '@mantine/carousel';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
-import Image from 'next/legacy/image';
-import { createStyles } from '@mantine/core';
-import Link from 'next/link';
+import yashika from '@/public/testimonials/yashika.jpg'
+import chelsy from '@/public/testimonials/chelsy.jpg'
+import suhina from '@/public/testimonials/suhina.jpg'
+import utsav from '@/public/testimonials/utsav.jpg'
+import ashu from '@/public/testimonials/ashu.jpg'
+import iksha from '@/public/testimonials/iksha.jpg'
 
 
 function Demo() {
@@ -12,11 +15,13 @@ function Demo() {
         {
             id: 1,
             name: 'Yashika',
+            img: yashika,
             review: '💯 recommended! The team is amazing ! Deeksha and abhishek do a fabulous job ! Thank you so much for turning those memories into beautiful ones ❤',
         },
         {
             id: 2,
             name: 'Ashu Tiwari',
+            img: ashu,
             review: `If you really want to make your marriage memorable do call them and they will definitely make your day special with their amazing decoration,and affordable packages
           I really loved their wrk and the hard wrk they have put.
           Haldi, sangeet , mehandi all decorations was really amazing
@@ -26,6 +31,7 @@ function Demo() {
         {
             id: 3,
             name: 'Utsav Verma',
+            img: utsav,
             review: `Making memories is the only one of there kind. What I liked most about them is their unique and funky ideas, which is also appreciated by most of their clients.
           These young talented folks will never let you down.
           All the best MAKING MEMORIES, you guyz are doing a great job 😇
@@ -34,16 +40,19 @@ function Demo() {
         {
             id: 4,
             name: 'Chelsy Jain',
+            img: chelsy,
             review: `They are the perfect wedding planning company. They made my dream day special. Made the designs exactly like we discussed and the pricing was also really good and pocket friendly`,
         },
         {
             id: 5,
             name: 'Iksha Jaiswal',
+            img: iksha,
             review: `I had a really amazing experience, my function was so beautiful handled and I was left awestruck by the decorations which were more amazing then the pictures that were shown to us.`,
         },
         {
             id: 6,
             name: 'Suhina Agarwal',
+            img: suhina,
             review: `Highly professional and responsive
           Had a great experience with Making Memories. They were responsive, gave personal attention, attentive listeners, paid heed to every need and were detail oriented. Overall attitude was friendly yet professional. Would highly recommend them.`,
         }
@@ -76,7 +85,7 @@ function Demo() {
                     <div className="flex flex-wrap -mx-4 items-center mt-12">
                         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
                             <div className="lg:max-w-md xl:max-w-lg">
-                                <img className="block w-full rounded-xl" src="/person.jpg" alt="" />
+                                <img className='block w-full rounded-xl' src={slide.img.src} alt="" />
                             </div>
                         </div>
                         <div className="w-full lg:w-1/2 px-4">
