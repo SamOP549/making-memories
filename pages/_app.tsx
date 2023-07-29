@@ -7,6 +7,7 @@ import FloatingInstagram from '@/components/FloatingInstagram'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -15,6 +16,9 @@ export default function App({ Component, pageProps }: AppProps) {
     });
   }, []);
   return <div>
+    <Head>
+      <link rel="icon" href="/logo.png" />
+    </Head>
     <Navbar />
     <Component {...pageProps} />
     <FloatingWhatsApp />
