@@ -17,7 +17,7 @@ const Contact = () => {
         if (name && email && phone && requirement && message) {
             if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
                 toast.error('Enter a valid email address!', {
-                    position: "bottom-center",
+                    position: "top-center",
                     autoClose: 2000,
                     hideProgressBar: false,
                     closeOnClick: true,
@@ -29,7 +29,7 @@ const Contact = () => {
             }
             else if (!phone.match(/^\d{10}$/)) {
                 toast.error('Enter a valid phone number!', {
-                    position: "bottom-center",
+                    position: "top-center",
                     autoClose: 2000,
                     hideProgressBar: false,
                     closeOnClick: true,
@@ -73,7 +73,7 @@ const Contact = () => {
                 let gmailres = await gmail.json()
                 if (gmailres.success) {
                     toast.success("We will contact you shortly!", {
-                        position: "bottom-center",
+                        position: "top-center",
                         autoClose: 2000,
                         hideProgressBar: false,
                         closeOnClick: true,
@@ -92,7 +92,7 @@ const Contact = () => {
         }
         else {
             toast.info('Please fill all the fields!', {
-                position: "bottom-center",
+                position: "top-center",
                 autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -110,7 +110,7 @@ const Contact = () => {
             </Head>
             <div className='pt-20 overflow-hidden'>
                 <ToastContainer
-                    position="bottom-center"
+                    position="top-center"
                     autoClose={2000}
                     hideProgressBar={false}
                     newestOnTop={false}
@@ -153,7 +153,7 @@ const Contact = () => {
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
 
-                                            <span className="mx-2 text-white truncate w-72">acb@example.com</span>
+                                            <span className="mx-2 text-white  w-72">makingmemoriesevent@makingmemoriesevent.com</span>
                                         </p>
                                     </div>
 
