@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
     </Head>
     <Navbar />
     <Component {...pageProps} />
+    <Analytics />
     <FloatingWhatsApp />
     <FloatingInstagram />
     <Footer />
